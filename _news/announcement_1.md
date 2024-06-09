@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2024-05-02
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Our paper [Cell2Sentence: Teaching Large Language Models the Language of Biology](https://www.biorxiv.org/content/10.1101/2023.09.11.557287v3.full.pdf) has been accepted at ICML 2024. Congratulations to all of the co-authors! See the blog post here.

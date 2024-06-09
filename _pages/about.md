@@ -2,24 +2,23 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: PhD student at <a href='https://www.yale.edu/'>Yale University</a>.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: Syed_Rizvi_Professional_Portrait.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Yale University</p>
+    <p>New Haven, CT</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a first-year PhD student in Computer Science at Yale University, advised by [Prof. David van Dijk](https://medicine.yale.edu/profile/david-vandijk/). I am also currently working as a Student Researcher at Google for Summer 2024 under the supervision of [Dr. Bryan Perozzi](https://research.google/people/bryan-perozzi/). I work on building and applying Graph Neural Networks, Large Language Models, and Foundational models to large-scale biological data.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Before joining Yale, I had the privilege of working as an undergraduate research student at the University of Houston, Rice University, and Houston Methodist. I received my bachelor's degree in Computer Science from the University of Houston in 2022.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Here is my <i class="ai ai-google-scholar-square"></i> [Google Scholar](https://scholar.google.com/citations?user=2rhnnZ4AAAAJ&hl=en) and <i class="fa-brands fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/syed-a-rizvi-01/).

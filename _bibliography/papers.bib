@@ -1,113 +1,82 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
-}
-
-@book{einstein1956investigations,
+@inproceedings{cicalese2021morphset,
   bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+  title={MorphSet: Improving Renal Histopathology Case Assessment Through Learned Prognostic Vectors},
+  author={Cicalese, Pietro Antonio and Rizvi, Syed Asad and Wang, Victor and Patibandla, Sai and Yuan, Pengyu and Zare, Samira and Moos, Katharina and Batal, Ibrahim and Clahsen-van Groningen, Marian and Roufosse, Candice and others},
+  abstract={Computer Aided Diagnosis (CAD) systems for renal histopathology applications aim to understand and replicate nephropathologists’ assessments of individual morphological compartments (e.g. glomeruli) to render case-level histological diagnoses. Deep neural networks (DNNs) hold great promise in addressing the poor intra- and interobserver agreement between pathologists. This being said, the generalization ability of DNNs heavily depends on the quality and quantity of training labels. Current “consensus” labeling strategies require multiple pathologists to evaluate every compartment unit over thousands of crops, resulting in enormous annotative costs. Additionally, these techniques fail to address the underlying reproducibility issues we observe across various diagnostic feature assessment tasks. To address both of these limitations, we introduce MorphSet, an end-to-end architecture inspired by Set Transformers which maps the combined encoded representations of Monte Carlo (MC) sampled glomerular compartment crops to produce Whole Slide Image (WSI) predictions on a case basis without the need for expensive fine-grained morphological feature labels. To evaluate performance, we use a kidney transplant Antibody Mediated Rejection (AMR) dataset, and show that we are able to achieve 98.9% case level accuracy, outperforming the consensus label baseline. Finally, we generate a visualization of prediction confidence derived from our MC evaluation experiments, which provides physicians with valuable feedback.},
+  url={https://link.springer.com/chapter/10.1007/978-3-030-87237-3_31},
+  html={https://link.springer.com/chapter/10.1007/978-3-030-87237-3_31},
+  booktitle={Medical Image Computing and Computer Assisted Intervention--MICCAI 2021: 24th International Conference, Strasbourg, France, September 27--October 1, 2021, Proceedings, Part VIII 24},
+  pages={319--328},
+  year={2021},
+  organization={Springer}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
+
+@article{rizvihistopathology,
   bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+  title={Histopathology DatasetGAN: Synthesizing Large-Resolution Histopathology Datasets},
+  author={Rizvi, S and Cicalese, P and Seshan, S and Sciascia, S and Becker, J and Nguyen, H},
+  abstract={Deep learning-based methods have powered recent advancements in medical image segmentation, accelerating the field past previous statistical and Machine Learning-based methods [1]. This, however, has simultaneously created a need for large quantities of labeled data, which is difficult in domains such as medical imaging where labeling is expensive and requires expert knowledge. Semi-supervised learning (SSL) addresses these limitations by augmenting labeled data with large quantities of more widely available unlabeled data. Existing semi-supervised frameworks based on pseudo-labeling [2] or contrastive methods [3], however, struggle to scale to the high resolution of medical image datasets. In this work, we propose the Histopathology DatasetGAN (HDGAN) framework, an extension of the DatasetGAN framework for image generation and segmentation that scales well to large-resolution histopathology images. We make several adaptations on the original framework, including updating the generative backbone, selectively extracting latent features from the generator, and switching to memory-mapped arrays. These changes reduce the memory consumption of the framework, improving its applicability to medical imaging domains.},
+  url={https://isip.piconepress.com/conferences/ieee_spmb/2022/papers/p01_16.pdf},
+  html={https://isip.piconepress.com/conferences/ieee_spmb/2022/papers/p01_16.pdf},
+  journal={IEEE SPMB, 2022},
+  year={2022},
+  preview={hdgan_fig1_architecture.png}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
+@inproceedings{rizvi2023local,
+  bibtex_show={true},
+  title={Local contrastive learning for medical image recognition},
+  author={Rizvi, Syed A and Tang, Ruixiang and Jiang, Xiaoqian and Ma, Xiaotian and Hu, Xia},
+  abstract={The proliferation of Deep Learning (DL)-based methods for radiographic image analysis has created a great demand for expert-labeled radiology data. Recent self-supervised frameworks have alleviated the need for expert labeling by obtaining supervision from associated radiology reports. These frameworks, however, struggle to distinguish the subtle differences between different pathologies in medical images. Additionally, many of them do not provide interpretation between image regions and text, making it difficult for radiologists to assess model predictions. In this work, we propose Local Region Contrastive Learning (LRCLR), a flexible fine-tuning framework that adds layers for significant image region selection as well as cross-modality interaction. Our results on an external validation set of chest x-rays suggest that LRCLR identifies significant local image regions and provides meaningful interpretation against radiology text while improving zero-shot performance on several chest x-ray medical findings.},
+  url={https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10785845/},
+  html={https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10785845/},
+  booktitle={AMIA Annual Symposium Proceedings},
+  volume={2023},
+  pages={1236},
+  year={2023},
+  organization={American Medical Informatics Association},
+  preview={LRCLR_overview_figure.png}
+}
+
+@article{rizvi2022fimp,
+  bibtex_show={true},
+  title={FIMP: Foundation Model-Informed Message Passing for Graph Neural Networks},
+  author={Rizvi, Syed Asad and Nguyen, Nhi and Lyu, Haoran and Christensen, Benjamin and Caro, Josue Ortega and Fonseca, Antonio HO and Zappala, Emanuele and Bagherian, Maryam and Averill, Christopher and Abdallah, Chadi G and others},
+  abstract={Foundation models have revolutionized the landscape of Deep Learning (DL), serving as a versatile platform which can be adapted to a wide range of downstream tasks. Despite their adaptability, applications of foundation models to downstream graph-based tasks have been limited, and there remains no convenient way to leverage large-scale non-graph pretrained models in graph-structured settings. In this work, we present a new framework which we term Foundation-Informed Message Passing (FIMP) to bridge the fields of foundational models and GNNs through a simple concept: constructing message-passing operators from pretrained foundation model weights. We show that this approach results in improved performance for graph-based tasks in a number of data domains, allowing graph neural networks to leverage the knowledge of foundation models.},
+  url={https://arxiv.org/pdf/2210.09475},
+  html={https://arxiv.org/pdf/2210.09475},
+  journal={arXiv preprint arXiv:2210.09475},
+  year={2023},
+  preview={fimp_overview_figure.png}
+}
+
+@inproceedings{caro2023brainlm,
+  bibtex_show={true},
+  title={BrainLM: A foundation model for brain activity recordings},
+  author={Caro, Josue Ortega and de Oliveira Fonseca, Antonio Henrique and Rizvi, Syed A and Rosati, Matteo and Averill, Christopher and Cross, James L and Mittal, Prateek and Zappala, Emanuele and Dhodapkar, Rahul Madhav and Abdallah, Chadi and others},
+  abstract={We introduce the Brain Language Model (BrainLM), a foundation model for brain activity dynamics trained on 6,700 hours of fMRI recordings. Utilizing self-supervised masked-prediction training, BrainLM demonstrates proficiency in both fine-tuning and zero-shot inference tasks. Fine-tuning allows for the accurate prediction of clinical variables like age, anxiety, and PTSD as well as forecasting of future brain states. Critically, the model generalizes well to entirely new external cohorts not seen during training. In zero-shot inference mode, BrainLM can identify intrinsic functional networks directly from raw fMRI data without any network-based supervision during training. The model also generates interpretable latent representations that reveal relationships between brain activity patterns and cognitive states. Overall, BrainLM offers a versatile and interpretable framework for elucidating the complex spatiotemporal dynamics of human brain activity. It serves as a powerful "lens" through which massive repositories of fMRI data can be analyzed in new ways, enabling more effective interpretation and utilization at scale. The work demonstrates the potential of foundation models to advance computational neuroscience research.},
+  url={https://openreview.net/pdf?id=RwI7ZEfR27},
+  html={https://openreview.net/pdf?id=RwI7ZEfR27},
+  journal={ICLR 2024},
+  year={2024},
+  preview={BrainLM_ICLR_Thumbnail.png},
   selected={true}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
+@article{levine2023cell2sentence,
   bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+  title={Cell2sentence: Teaching large language models the language of biology},
+  author={Levine, Daniel and L{\'e}vy, Sacha and Rizvi, Syed Asad and Pallikkavaliyaveetil, Nazreen and Chen, Xingyu and Zhang, David and Ghadermarzi, Sina and Wu, Ruiming and Zheng, Zihe and Vrkic, Ivan and others},
+  abstract={We introduce Cell2Sentence (C2S), a novel method to directly adapt large language models to a biological context, specifically single-cell transcriptomics. By transforming gene expression data into ”cell sentences,” C2S bridges the gap between natural language processing and biology. We demonstrate cell sentences enable the finetuning of language models for diverse tasks in biology, including cell generation, complex celltype annotation, and direct data-driven text generation. Our experiments reveal that GPT-2, when fine-tuned with C2S, can generate biologically valid cells based on cell type inputs, and accurately predict cell types from cell sentences. This illustrates that language models, through C2S finetuning, can acquire a significant understanding of single-cell biology while maintaining robust text generation capabilities. C2S offers a flexible, accessible framework to integrate natural language processing with transcriptomics, utilizing existing models and libraries for a wide range of biological applications.},
+  url={https://openreview.net/pdf?id=RwI7ZEfR27},
+  url={https://www.biorxiv.org/content/biorxiv/early/2024/02/15/2023.09.11.557287.full.pdf},
+  html={https://www.biorxiv.org/content/biorxiv/early/2024/02/15/2023.09.11.557287.full.pdf},
+  journal={ICML 2024},
+  year={2024},
+  preview={Cell2Sentence_Overview.png},
+  selected={true}
 }
