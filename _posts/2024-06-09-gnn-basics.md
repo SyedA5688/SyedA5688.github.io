@@ -14,7 +14,7 @@ toc:
 
 This guide is a short, intuitive introduction to Graph Neural Networks (GNNs), specifically Message-Passing Neural Networks, aimed for students and researchers looking to learn more about training basic neural networks on graph-structured data. I’ve had many great conversations with labmates and friends who are looking to understand GNNs more deeply, yet find it hard to get to the crux of how these models learn on graphs. In that spirit, I’m collecting some thoughts, perspectives, and pseudocode which helped me understand Graph Neural Networks more deeply when I first started studying them as an undergraduate student.
 
-As a note at the beforehand, this guide is not meant as a comprehensive review or in-depth tutorial on GNNs; rather, it is meant to build intuition for what is happening under the hood of simple GNNs. Our goal by the end will be to have the ability to point at any operation inside the GNN and explain what it is doing, and what are the shapes and meaning of all the tensors and neural network weights involved. A follow-up blog post will relate the pseudocode shown at the end to real Python and Pytorch Geometric code.
+As a note beforehand, this guide is not meant as a comprehensive review or in-depth tutorial on GNNs; rather, it is meant to build intuition for what is happening under the hood of simple GNNs. Our goal by the end will be to have the ability to point at any operation inside the GNN and explain what it is doing, and what are the shapes and meaning of all the tensors and neural network weights involved. A follow-up blog post will relate the pseudocode shown at the end to real Python and Pytorch Geometric code.
 
 
 # Graphs, all around us!
@@ -51,7 +51,7 @@ For now, let’s keep looking at a small molecular graph from earlier, made up o
 - The node feature matrix is a matrix which contains all of the features for all nodes in our graph. The shape of this matrix will be [number_of_nodes x number of features], which is [6 x 4] in our small example above, and is usually denoted as $$X$$. With $$N=6$$ nodes and $$F=4$$ features, we have $$X \in R^{N \times F}$$. You can imagine that the four features might be attributes of each atom, such as its atomic number, atomic mass, charge, and other relevant attributes.
 
 ## Adjacency matrix
-- The adjacency matrix is a (usually) binary matrix which contains information about what nodes are connected to what other nodes in the graph. The shape of this matrix will be [number_of_nodes x number_of_nodes], which will be [6 x 6] in our small example and is usually denoted as $$A \in R^{N \times N}$$. Edges usually have some directionality (a “source” node and “destination node”), so by convention we say that source nodes are the rows and destination nodes are the columns of the matrix, with a 1 indicating an edge between source node $$u$$ and destination node $$v$$.
+- The adjacency matrix is a (usually) binary matrix which contains information about what nodes are connected to what other nodes in the graph. The shape of this matrix will be [number_of_nodes x number_of_nodes], which will be [6 x 6] in our small example and is usually denoted as $$A \in R^{N \times N}$$. Edges usually have some directionality (a “source” node and “destination" node), so by convention we say that source nodes are the rows and destination nodes are the columns of the matrix, with a 1 indicating an edge between source node $$u$$ and destination node $$v$$.
 - You’ll notice that the diagonal of the adjacency matrix are all 1s, and are highlighted in <span style="color:green">green</span>. We have a choice in modeling our graph of whether we want to consider a node as connected to itself or not (it may or may not make a difference depending on our data and GNN architecture), but for this simple example we include self-connections here and highlight them green as a reminder that node entities connect to themselves. You will also notice that the adjacency matrix is symmetric around its diagonal; this means we are working on an undirected graph (atom 1 being connected to atom 2 means 2 is connect to 1 as well). This is not always the case, for example, think about a citation networks: paper A citing paper B does not mean the reverse is true.
 
 
@@ -74,7 +74,7 @@ Many GNN architectures have been proposed with varying forms of graph convolutio
 2. **Aggregate:** nodes receive messages from all of their neighbors, who also passed messages, and decides how to combine the information from all of its neighbors
 3. **Update:** each node decides how to combine neighborhood information with its own information, and updates its embedding for the next timestep
 
-If we can define these three operations, then we can disseminate information on the graph, which is considered one message passing step. This can be repeated for $$K$$ iterations, thus controlling how much we diffuse information around the graphs, which affects the embeddings we get at the end. Finally, if we incorporate some learned weights from a neural network into these operations and define a loss function on the resulting embeddings for some downstream task (e.g. node classification), then we have all of the ingredients for learning on graphs.
+If we can define these three operations, then we can disseminate information on the graph, which is considered one message passing step. This can be repeated for $$K$$ iterations, thus controlling how much we diffuse information around the graph, which affects the embeddings we get at the end. Finally, if we incorporate some learned weights from a neural network into these operations and define a loss function on the resulting embeddings for some downstream task (e.g. node classification), then we have all of the ingredients for learning on graphs.
 
 
 Let’s zoom in a bit on each step for one destination node $$v$$, define some notation, and visualize how the node feature matrix and adjacency matrix are going into each operation:
@@ -99,7 +99,7 @@ And now we’ve done it! We’ve made it through one message passing step, and i
 
 # A general algorithm for message-passing
 
-The GraphSAGE paper [2] introduces a pseudocode algorithm for message passing which I quite like, and will put below for those thinking about the overall algorithm. This is actually the first algorithm I dissected as an undergraduate student to understand each operation and relate it to code implementations (which I will do in another blog post).
+The GraphSAGE paper [2] introduces a pseudocode algorithm for message passing which I quite like, and will put below for those thinking about the overall algorithm. This is actually the first algorithm I dissected as an undergraduate student to understand each operation and relate it to code implementations (which I will do in another blog post!).
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
