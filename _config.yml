@@ -130,7 +130,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Syed Rizvi blog # blog_name will be displayed in your blog page
-blog_description: A look at my learnings about Graph Neural Networks, Large Language Models, biological data, and other topics as I progress through my research career.
+blog_description: Documenting my learnings about Graph Neural Networks, Large Language Models, biological data, and other topics as I progress through my research career.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
