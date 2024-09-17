@@ -17,7 +17,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a first-year PhD student in Computer Science at Yale University, advised by [Prof. David van Dijk](https://medicine.yale.edu/profile/david-vandijk/). I am also currently working as a Student Researcher at Google for Summer 2024 under the supervision of [Dr. Bryan Perozzi](https://research.google/people/bryan-perozzi/). I work on building and applying Graph Neural Networks, Large Language Models, and Foundational models to large-scale biological data.
+I am a second-year PhD student in Computer Science at Yale University, advised by [Prof. David van Dijk](https://medicine.yale.edu/profile/david-vandijk/). I am also currently working as a Student Researcher at Google for Summer 2024 under the supervision of [Dr. Bryan Perozzi](https://research.google/people/bryan-perozzi/). I work on building and applying Graph Neural Networks, Large Language Models, and Foundational models to large-scale biological data.
 
 Before joining Yale, I had the privilege of working as an undergraduate research student at the University of Houston, Rice University, and Houston Methodist. I received my bachelor's degree in Computer Science from the University of Houston in 2022.
 
