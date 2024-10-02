@@ -5,7 +5,7 @@
     "image": "",
     "email": "syed.rizvi@yale.edu",
     "url": "https://syedarizvi.com/",
-    "research interests": "My primary research interests lie at the intersection of Graph Neural Networks and Foundation Models, particularly in applications to large-scale biological data.",
+    "research interests": "My primary research interests lie at the intersection of Graph Neural Networks and Large Language Models, particularly in applications to large-scale biological data.",
     "location": {
       "postalCode": "CT 06511",
       "city": "New Haven",
@@ -125,6 +125,13 @@
       "releaseDate": "2023-11-11",
       "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10785845/",
       "summary": "A fintuning framework for vision-language models which introduces interpretability and significant image region selection in radiology images."
+    },
+    {
+      "name": "Deep Learning-Derived Optimal Aviation Strategies to Control Pandemics",
+      "publisher": "Nature Scientific Reports",
+      "releaseDate": "2024-10-02",
+      "url": "https://www.nature.com/articles/s41598-024-73639-7.epdf",
+      "summary": "Spatiotemporal Graph Neural Network architecture for COVID-19 infection forecasting, focusing on modeling dynamic flight connections between regions."
     },
     {
       "name": "Histopathology DatasetGAN: Synthesizing Large-Resolution Histopathology Datasets",

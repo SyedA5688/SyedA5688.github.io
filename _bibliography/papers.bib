@@ -11,9 +11,9 @@
   booktitle={Medical Image Computing and Computer Assisted Intervention--MICCAI 2021: 24th International Conference, Strasbourg, France, September 27--October 1, 2021, Proceedings, Part VIII 24},
   pages={319--328},
   year={2021},
-  organization={Springer}
+  organization={Springer},
+  preview={morphset_img.png}
 }
-
 
 @article{rizvihistopathology,
   bibtex_show={true},
@@ -22,7 +22,7 @@
   abstract={Deep learning-based methods have powered recent advancements in medical image segmentation, accelerating the field past previous statistical and Machine Learning-based methods [1]. This, however, has simultaneously created a need for large quantities of labeled data, which is difficult in domains such as medical imaging where labeling is expensive and requires expert knowledge. Semi-supervised learning (SSL) addresses these limitations by augmenting labeled data with large quantities of more widely available unlabeled data. Existing semi-supervised frameworks based on pseudo-labeling [2] or contrastive methods [3], however, struggle to scale to the high resolution of medical image datasets. In this work, we propose the Histopathology DatasetGAN (HDGAN) framework, an extension of the DatasetGAN framework for image generation and segmentation that scales well to large-resolution histopathology images. We make several adaptations on the original framework, including updating the generative backbone, selectively extracting latent features from the generator, and switching to memory-mapped arrays. These changes reduce the memory consumption of the framework, improving its applicability to medical imaging domains.},
   url={https://isip.piconepress.com/conferences/ieee_spmb/2022/papers/p01_16.pdf},
   html={https://isip.piconepress.com/conferences/ieee_spmb/2022/papers/p01_16.pdf},
-  journal={IEEE SPMB, 2022},
+  journal={IEEE Signal Processing in Medicine and Biology (SPMB)},
   year={2022},
   preview={hdgan_fig1_architecture.png}
 }
@@ -34,7 +34,7 @@
   abstract={The proliferation of Deep Learning (DL)-based methods for radiographic image analysis has created a great demand for expert-labeled radiology data. Recent self-supervised frameworks have alleviated the need for expert labeling by obtaining supervision from associated radiology reports. These frameworks, however, struggle to distinguish the subtle differences between different pathologies in medical images. Additionally, many of them do not provide interpretation between image regions and text, making it difficult for radiologists to assess model predictions. In this work, we propose Local Region Contrastive Learning (LRCLR), a flexible fine-tuning framework that adds layers for significant image region selection as well as cross-modality interaction. Our results on an external validation set of chest x-rays suggest that LRCLR identifies significant local image regions and provides meaningful interpretation against radiology text while improving zero-shot performance on several chest x-ray medical findings.},
   url={https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10785845/},
   html={https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10785845/},
-  booktitle={AMIA Annual Symposium Proceedings},
+  booktitle={American Medical Informatics Association (AMIA) Symposium},
   volume={2023},
   pages={1236},
   year={2023},
@@ -61,8 +61,8 @@
   abstract={We introduce the Brain Language Model (BrainLM), a foundation model for brain activity dynamics trained on 6,700 hours of fMRI recordings. Utilizing self-supervised masked-prediction training, BrainLM demonstrates proficiency in both fine-tuning and zero-shot inference tasks. Fine-tuning allows for the accurate prediction of clinical variables like age, anxiety, and PTSD as well as forecasting of future brain states. Critically, the model generalizes well to entirely new external cohorts not seen during training. In zero-shot inference mode, BrainLM can identify intrinsic functional networks directly from raw fMRI data without any network-based supervision during training. The model also generates interpretable latent representations that reveal relationships between brain activity patterns and cognitive states. Overall, BrainLM offers a versatile and interpretable framework for elucidating the complex spatiotemporal dynamics of human brain activity. It serves as a powerful "lens" through which massive repositories of fMRI data can be analyzed in new ways, enabling more effective interpretation and utilization at scale. The work demonstrates the potential of foundation models to advance computational neuroscience research.},
   url={https://openreview.net/pdf?id=RwI7ZEfR27},
   html={https://openreview.net/pdf?id=RwI7ZEfR27},
-  journal={ICLR 2024},
-  booktitle={ICLR 2024},
+  journal={International Conference on Learning Representations (ICLR)},
+  booktitle={International Conference on Learning Representations (ICLR)},
   year={2024},
   preview={BrainLM_ICLR_Thumbnail.png},
   selected={true}
@@ -76,8 +76,21 @@
   url={https://openreview.net/pdf?id=RwI7ZEfR27},
   url={https://www.biorxiv.org/content/biorxiv/early/2024/02/15/2023.09.11.557287.full.pdf},
   html={https://www.biorxiv.org/content/biorxiv/early/2024/02/15/2023.09.11.557287.full.pdf},
-  journal={ICML 2024},
+  journal={International Conference on Machine Learning (ICML)},
   year={2024},
-  preview={Cell2Sentence_Overview.png},
+  preview={Cell2Sentence_img.png},
   selected={true}
+}
+
+@article{rizvi2022deep,
+  bibtex_show={true},
+  title={Deep Learning-Derived Optimal Aviation Strategies to Control Pandemics},
+  author={Rizvi, Syed and Awasthi, Akash and Pel{\'a}ez, Maria J and Wang, Zhihui and Cristini, Vittorio and Van Nguyen, Hien and Dogra, Prashant},
+  abstract={The COVID-19 pandemic affected countries across the globe, demanding drastic public health policiesto mitigate the spread of infection, which led to economic crises as a collateral damage. In this work,we investigate the impact of human mobility, described via international commercial flights, onCOVID-19 infection dynamics on a global scale. We developed a graph neural network (GNN)-basedframework called Dynamic Weighted GraphSAGE (DWSAGE), which operates over spatiotemporalgraphs and is well-suited for dynamically changing flight information updated daily. This architecture isdesigned to be structurally sensitive, capable of learning the relationships between edge features andnode features. To gain insights into the influence of air traffic on infection spread, we conducted localsensitivity analysis on our model through perturbation experiments. Our analyses identified WesternEurope, the Middle East, and North America as leading regions in fueling the pandemic due to thehigh volume of air traffic originating or transiting through these areas. We used these observationsto propose air traffic reduction strategies that can significantly impact controlling the pandemic withminimal disruption to human mobility. Our work provides a robust deep learning-based tool to studyglobal pandemics and is of key relevance to policymakers for making informed decisions regarding airtraffic restrictions during future outbreaks.},
+  url={https://www.nature.com/articles/s41598-024-73639-7.epdf},
+  html={https://www.nature.com/articles/s41598-024-73639-7.epdf},
+  journal={Nature Scientific Reports},
+  year={2024},
+  preview={DCSAGE_Architecture.png},
+  selected={true},
 }
