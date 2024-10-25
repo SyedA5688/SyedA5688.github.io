@@ -7,4 +7,4 @@ related_posts: false
 
 I gave an invited primer talk about [Large Language Models and Biological Foundation Models](https://www.broadinstitute.org/talks/large-language-models-and-biological-foundation-models) at the [Broad Institute of MIT and Harvard](https://www.broadinstitute.org/)!
 
-<video style="width:70%" src="https://www.youtube.com/watch?v=ku4DImfea6Q" controls=""></video>
+<!-- <video style="width:70%" src="https://www.youtube.com/watch?v=ku4DImfea6Q" controls=""></video> -->
