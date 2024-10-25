@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I gave an invited talk about Large Language Models and Biological Foundation Models at the Broad Institute of MIT and Harvard!
+I gave an [invited talk](https://www.broadinstitute.org/talks/large-language-models-and-biological-foundation-models) about Large Language Models and Biological Foundation Models at the [Broad Institute](https://www.broadinstitute.org) of MIT and Harvard!
