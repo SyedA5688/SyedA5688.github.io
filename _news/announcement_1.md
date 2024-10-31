@@ -9,6 +9,7 @@ I gave an [invited talk](https://www.broadinstitute.org/talks/large-language-mod
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include video.liquid path="https://www.youtube.com/watch?v=ku4DImfea6Q" class="img-fluid rounded z-depth-1" %}
+        <iframe src="https://www.youtube.com/watch?v=ku4DImfea6Q" class="img-fluid rounded z-depth-1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
+
