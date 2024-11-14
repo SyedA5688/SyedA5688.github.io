@@ -7,12 +7,3 @@ minify: false
 ---
 
 I gave an [invited talk](https://www.broadinstitute.org/talks/large-language-models-and-biological-foundation-models) about Large Language Models and Biological Foundation Models at the [Broad Institute](https://www.broadinstitute.org) of MIT and Harvard!
-
-{% raw %}
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        <iframe src="https://www.youtube.com/embed/ku4DImfea6Q" class="img-fluid rounded z-depth-1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-</div>
-{% endraw %}
-
